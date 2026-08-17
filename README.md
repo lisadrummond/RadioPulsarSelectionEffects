@@ -6,10 +6,10 @@ This directory contains the data products accompanying the paper 'Observational 
 ## Contents
 
 - `hyperposterior_samples/`: samples for the final population model, with and without selection effects.
-- `selection_function/`: the full five-dimensional selection function and its one-dimensional selection fraction marginals.
+- `selection_function/`: the full five-dimensional selection function and its one-dimensional selected fraction marginals.
 - `individual_pulsar_posteriors/`: mass and inclination samples for each of the 46 pulsars.
 - `example_usage.ipynb`: a simple notebook that loads and plots examples of the released data.
 
 Masses are in solar masses, inclinations are in degrees, orbital periods are in days, spin periods are in seconds, and logarithms are base 10. The individual posterior columns are `mp_msun`, `mc_msun`, and `inclination_deg`.
 
-The selection injections are uniform in pulsar mass, companion mass, eccentricity, `log10(Pb/day)`, and `log10(Ps/s)`. Each one-dimensional selected-fraction marginal averages over the uniform injected distributions of the other four variables; it is not reweighted by the inferred population. The underlying injection run for the selection function contains 10^7 points; the release instead provides an easier to use binned version of the selection function.
+The selection injections are uniform in pulsar mass, companion mass, eccentricity, `log10(Pb/day)`, and `log10(Ps/s)`. Each one-dimensional selected fraction marginal averages over the uniform injected distributions of the other four variables; it is not reweighted by the inferred population. The underlying injection run for the selection function contains 10^7 points; the release instead provides an easier to use binned version of the selection function.
